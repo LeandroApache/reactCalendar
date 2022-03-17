@@ -1,0 +1,95 @@
+.calendarWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #626D71;
+}
+
+.calendarCell {
+    flex: 1 1 auto;
+    width: 14%;
+    /*flex-basis: 14%;*/
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #CDCDC0;
+    margin: 0 1px 1px 0;
+}
+
+.headerCell {
+    min-height: 30px;
+    color: #B38867;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    padding-right: 10px;
+    margin-right: 0;
+
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.calendarCellWeekend {
+    background-color: #DDBC95;
+}
+.calendarCellOtherMonth {
+    background-color: rgba(205, 205, 192, 0.76);
+}
+
+.calendarCellCurrent {
+    border-top: 5px solid #B38867;
+}
+
+.calendarCellCurrent .cellHeader{
+    color: #B38867;
+}
+
+.cellHeader {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    color: #626D71;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.cellHeader span {
+    transition: all 0.3s ease-in-out;
+}
+.cellHeader span:hover {
+    transform: scale(1.3);
+}
+
+.cellBody {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    max-width: 200px;
+}
+
+.cellBody ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
+    width: 100%;
+}
+
+.cellBody li {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 3px;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.cellBody li:hover {
+    border-radius: 5px;
+    transform: scale(1.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}

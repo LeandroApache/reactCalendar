@@ -1,0 +1,27 @@
+.monitor {
+    background-color: #CDCDC0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.date {
+    color: #B38867;
+    font-size: 2rem;
+}
+
+.month {
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.year {
+}
+
+.controls button {
+    color: #B38867;
+    background-color: #DDBC95;
+    outline: none;
+    border: none;
+}
